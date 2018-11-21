@@ -14,6 +14,6 @@ export class LoginComponent implements OnInit {
   }
 
   verificar(): void{
-    this.router.navigate(['/general']);
+    this.router.navigate(['/noticias']);
   }
 }
