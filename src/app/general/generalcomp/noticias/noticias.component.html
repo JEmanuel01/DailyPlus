@@ -1,3 +1,30 @@
 <app-general></app-general>
+<div>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="New News">Inserte su comentario</label>
+      <input type="text" class="form-control" placeholder="Insert user" id="item" required [(ngModel)]="itemValue" name="item">
+    </div>
+  
+    <div class="btn-group">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>
 
-<h1>Hola mundo</h1>
+
+
+<div>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="New News">Descripcion de la noticia</label>
+      <input type="text" class="form-control" placeholder="Insert user" id="daily" required [(ngModel)]="news.user" name="daily">
+      <input type="text" class="form-control" placeholder="Insert title" id="daily" required [(ngModel)]="news.title" name="daily">
+      <input type="text" class="form-control" placeholder="Insert description" id="daily" required [(ngModel)]="news.description" name="daily">
+      <input type="text" class="form-control" placeholder="Insert date" id="daily" required [(ngModel)]="news.date" name="daily">
+      <input type="text" class="form-control" placeholder="Insert hashtag" id="daily" required [(ngModel)]="news.hashtag" name="daily">
+      <input type="text" class="form-control" placeholder="Insert imagen" id="daily" required [(ngModel)]="news.imagen" name="daily">
+      <input type="text" class="form-control" placeholder="Insert category" id="daily" required [(ngModel)]="news.category" name="daily">
+    </div>
+  </form>
+</div>
